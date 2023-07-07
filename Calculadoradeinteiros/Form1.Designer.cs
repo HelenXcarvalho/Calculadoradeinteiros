@@ -43,7 +43,7 @@
             btn_3 = new Button();
             btn_2 = new Button();
             bnt_divisao = new Button();
-            textBox1 = new TextBox();
+            display = new TextBox();
             SuspendLayout();
             // 
             // btn_1
@@ -64,7 +64,7 @@
             bnt_multiplicacao.TabIndex = 1;
             bnt_multiplicacao.Text = "x";
             bnt_multiplicacao.UseVisualStyleBackColor = true;
-            bnt_multiplicacao.Click += bnt_multiplicacao_Click;
+            bnt_multiplicacao.Click += bnt_multiplicacao_Click_1;
             // 
             // btn_subtracao
             // 
@@ -74,7 +74,7 @@
             btn_subtracao.TabIndex = 2;
             btn_subtracao.Text = "-";
             btn_subtracao.UseVisualStyleBackColor = true;
-            btn_subtracao.Click += btn_subtracao_Click;
+            btn_subtracao.Click += btn_subtracao_Click_1;
             // 
             // btn_soma
             // 
@@ -84,7 +84,7 @@
             btn_soma.TabIndex = 3;
             btn_soma.Text = "+";
             btn_soma.UseVisualStyleBackColor = true;
-            btn_soma.Click += btn_soma_Click;
+            btn_soma.Click += btn_soma_Click_1;
             // 
             // bt_igual
             // 
@@ -194,21 +194,21 @@
             bnt_divisao.TabIndex = 15;
             bnt_divisao.Text = "/";
             bnt_divisao.UseVisualStyleBackColor = true;
-            bnt_divisao.Click += bnt_divisao_Click;
+            bnt_divisao.Click += bnt_divisao_Click_1;
             // 
-            // textBox1
+            // display
             // 
-            textBox1.Location = new Point(109, 59);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(162, 31);
-            textBox1.TabIndex = 16;
+            display.Location = new Point(109, 59);
+            display.Name = "display";
+            display.Size = new Size(162, 31);
+            display.TabIndex = 16;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
+            Controls.Add(display);
             Controls.Add(bnt_divisao);
             Controls.Add(btn_2);
             Controls.Add(btn_3);
@@ -247,6 +247,6 @@
         private Button btn_3;
         private Button btn_2;
         private Button bnt_divisao;
-        private TextBox textBox1;
+        private TextBox display;
     }
 }
